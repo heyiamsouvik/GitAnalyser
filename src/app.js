@@ -16,6 +16,10 @@ app.use(helmet());
 
 app.use(morgan("dev"));
 
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
+
 app.use("/api", profileRoutes);
 
 module.exports = app;
