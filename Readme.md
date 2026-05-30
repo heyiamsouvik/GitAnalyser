@@ -26,7 +26,7 @@ A backend service built with Node.js, Express.js, MySQL, and the GitHub REST API
 ## Project Structure
 
 ```text
-github-profile-analyzer/
+GitAnalyser/
 │
 ├── src/
 │   ├── config/
