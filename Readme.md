@@ -269,22 +269,86 @@ Total Stars
 
 ## Deployment
 
-The API can be deployed on:
+The API is deployed on:
 
 * Render
 * Railway
-* Koyeb
+
 
 The database can be hosted on:
 
-* FreeSQLDatabase
-* Railway MySQL
-* Aiven
-* PlanetScale
+* FreeSQLDatabase.com
 
 ---
 
-## Sample Test URLs
+## Live Deployment
+
+Base URL:
+
+```text
+https://gitanalyser-092r.onrender.com
+```
+
+---
+
+## API Routes
+
+### 1. Analyze GitHub Profile
+
+Fetches GitHub profile data, generates insights, and stores the analysis in MySQL.
+
+**Endpoint**
+
+```http
+GET /api/analyze?username={github_username}
+```
+
+**Example**
+
+```http
+GET https://gitanalyser-092r.onrender.com/api/analyze?username=heyiamsouvik
+```
+
+
+---
+
+### 2. Get All Analyzed Profiles
+
+Returns all stored GitHub profile analyses.
+
+**Endpoint**
+
+```http
+GET /api/profiles
+```
+
+**Example**
+
+```http
+GET https://gitanalyser-092r.onrender.com/api/profiles
+```
+
+---
+
+### 3. Get Single Profile
+
+Returns a single analyzed profile by database ID.
+
+**Endpoint**
+
+```http
+GET /api/profiles/:id
+```
+
+**Example**
+
+```http
+GET https://gitanalyser-092r.onrender.com/api/profiles/1
+```
+
+---
+
+## Sample Test URLs on Localhost
 
 Analyze Profile:
 
