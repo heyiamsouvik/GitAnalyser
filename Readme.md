@@ -272,7 +272,6 @@ Total Stars
 The API is deployed on:
 
 * Render
-* Railway
 
 
 The database can be hosted on:
